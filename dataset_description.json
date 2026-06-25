@@ -1,16 +1,22 @@
 {
-    "Name": "TNO",
-    "License": "CC0",
-    "Authors": [
-        "Tony Johnson",
-        "Stephen Gordon",
-        "Jon Touryan",
-        "Kevin King"
-    ],
-    "ReferencesAndLinks": [
-        ""
-    ],
-    "BIDSVersion": "1.8.0",
-    "HEDVersion": "8.1.0",
-    "DatasetDOI": "doi:10.18112/openneuro.ds004660.v1.0.2"
+  "Name": "TNO",
+  "License": "CC0",
+  "Authors": [
+    "Tony Johnson",
+    "Stephen Gordon",
+    "Jon Touryan",
+    "Kevin King"
+  ],
+  "ReferencesAndLinks": [
+    ""
+  ],
+  "BIDSVersion": "1.8.0",
+  "HEDVersion": "8.1.0",
+  "DatasetDOI": "10.82901/nemar.on004660",
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.18112/openneuro.ds004660.v1.0.2"
+    }
+  ],
+  "Version": "1.0.0"
 }
