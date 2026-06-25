@@ -1,30 +1,69 @@
 {
   "version": "2.0",
-  "dataset_id": "on004660",
-  "source": "openneuro",
-  "source_id": "ds004660",
+  "pipeline_stage": "enriched",
   "title": "TNO",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Tony Johnson": {},
     "Stephen Gordon": {},
     "Jon Touryan": {},
     "Kevin King": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004660.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004660",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004660",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "cognitive tasks"
+    },
+    {
+      "term": "oscillations"
+    },
+    {
+      "term": "neurophysiology"
+    },
+    {
+      "term": "Task-Negative Oscillations"
+    },
+    {
+      "term": "TNO"
+    }
+  ],
+  "description": "TNO (Task-Negative Oscillations) is an EEG dataset containing resting-state and task-based electroencephalography recordings. The dataset includes raw EEG data collected during cognitive tasks and resting-state conditions, provided in EEGLAB format (.set/.fdt files) with accompanying metadata and event information in BIDS-compatible formats. This dataset is designed to investigate neural oscillations and their relationship to task engagement and cognitive processing.",
+  "source_hash": "0ce0280aaf44945a3945d26850760392122ee2aeca847fa3aea8a6af2e64c45c"
 }
