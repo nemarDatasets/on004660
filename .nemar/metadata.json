@@ -1,8 +1,8 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "TNO",
-  "description": "TNO (Task-Negative Oscillations) is an EEG dataset containing resting-state and task-based electroencephalography recordings. The dataset includes raw EEG data collected during cognitive tasks and resting-state conditions, provided in EEGLAB format (.set/.fdt files) with accompanying metadata and event information in BIDS-compatible formats. This dataset is designed to investigate neural oscillations and their relationship to task engagement and cognitive processing. The dataset is derived from OpenNeuro dataset ds004660 and has been reformatted and enriched for the NEMAR platform.",
+  "description": "TNO (Task-Negative Oscillations) is an EEG dataset containing resting-state and task-based electroencephalography recordings. The dataset includes EEG data collected during cognitive tasks and resting-state conditions, organized in BIDS format with data files in EEGLAB format (.set/.fdt files) and accompanying metadata in BIDS-compatible formats (JSON, TSV). This dataset is designed to investigate neural oscillations and their relationship to task engagement and cognitive processing. The dataset comprises recordings from multiple subjects performing standardized cognitive tasks and resting-state sessions, with complete event annotations and electrode location information.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,25 +13,33 @@
   },
   "keywords": [
     {
-      "term": "EEG"
+      "term": "EEG",
+      "subject_scheme": "MeSH"
     },
     {
       "term": "resting-state"
     },
     {
-      "term": "task-based EEG"
+      "term": "cognitive tasks",
+      "subject_scheme": "MeSH"
     },
     {
-      "term": "neural oscillations"
+      "term": "neural oscillations",
+      "subject_scheme": "MeSH"
     },
     {
-      "term": "cognitive processing"
+      "term": "neurophysiology",
+      "subject_scheme": "MeSH"
     },
     {
-      "term": "Task-Negative Oscillations"
+      "term": "task engagement"
     },
     {
-      "term": "neurophysiology"
+      "term": "electroencephalography",
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
@@ -49,11 +57,6 @@
       "identifier": "10.18112/openneuro.ds004660.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
-    },
-    {
-      "identifier": "10.82901/nemar.on004660",
-      "identifier_type": "DOI",
-      "relation_type": "IsVersionOf"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -71,5 +74,6 @@
     ".tsv",
     ".yml"
   ],
+  "methods_description": "EEG data were collected using standard electrode montages during both resting-state and task-based conditions. Resting-state recordings captured spontaneous neural activity, while task-based recordings were acquired during cognitive task performance. Raw data were preserved in EEGLAB format (.set/.fdt) to maintain signal integrity. All data are organized according to BIDS standards with accompanying metadata files (JSON sidecars, TSV event files) documenting acquisition parameters, electrode locations, and task event timing. Detailed information about specific task protocols, subject demographics, data collection procedures, and any preprocessing steps is provided in the dataset documentation.",
   "source_hash": "8351192f7175915b3f59799e793a44e9706b9602ce3cc19e5d8cd9914d5f270b"
 }
