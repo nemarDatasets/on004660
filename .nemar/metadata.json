@@ -1,7 +1,8 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "TNO",
+  "description": "TNO (Task-Negative Oscillations) is an EEG dataset containing resting-state and task-based electroencephalography recordings. The dataset includes raw EEG data collected during cognitive tasks and resting-state conditions, provided in EEGLAB format (.set/.fdt files) with accompanying metadata and event information in BIDS-compatible formats. This dataset is designed to investigate neural oscillations and their relationship to task engagement and cognitive processing. The dataset is derived from OpenNeuro dataset ds004660 and has been reformatted and enriched for the NEMAR platform.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +11,30 @@
     "Jon Touryan": {},
     "Kevin King": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004660.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "task-based EEG"
+    },
+    {
+      "term": "neural oscillations"
+    },
+    {
+      "term": "cognitive processing"
+    },
+    {
+      "term": "Task-Negative Oscillations"
+    },
+    {
+      "term": "neurophysiology"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004660",
       "identifier_type": "URL",
@@ -25,45 +44,32 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004660",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004660.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.82901/nemar.on004660",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "7.8 GB (85 files)"
   ],
   "formats": [
     ".fdt",
     ".json",
     ".md",
     ".set",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "resting-state"
-    },
-    {
-      "term": "cognitive tasks"
-    },
-    {
-      "term": "oscillations"
-    },
-    {
-      "term": "neurophysiology"
-    },
-    {
-      "term": "Task-Negative Oscillations"
-    },
-    {
-      "term": "TNO"
-    }
-  ],
-  "description": "TNO (Task-Negative Oscillations) is an EEG dataset containing resting-state and task-based electroencephalography recordings. The dataset includes raw EEG data collected during cognitive tasks and resting-state conditions, provided in EEGLAB format (.set/.fdt files) with accompanying metadata and event information in BIDS-compatible formats. This dataset is designed to investigate neural oscillations and their relationship to task engagement and cognitive processing.",
-  "source_hash": "0ce0280aaf44945a3945d26850760392122ee2aeca847fa3aea8a6af2e64c45c"
+  "source_hash": "8351192f7175915b3f59799e793a44e9706b9602ce3cc19e5d8cd9914d5f270b"
 }
