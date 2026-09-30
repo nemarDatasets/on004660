@@ -1,8 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "TNO",
-  "description": "TNO (Task-Negative Oscillations) is an EEG dataset containing resting-state and task-based electroencephalography recordings. The dataset includes EEG data collected during cognitive tasks and resting-state conditions, organized in BIDS format with data files in EEGLAB format (.set/.fdt files) and accompanying metadata in BIDS-compatible formats (JSON, TSV). This dataset is designed to investigate neural oscillations and their relationship to task engagement and cognitive processing. The dataset comprises recordings from multiple subjects performing standardized cognitive tasks and resting-state sessions, with complete event annotations and electrode location information.",
+  "description": "The TNO dataset is an EEG dataset in BIDS format with HED annotations, authored by Tony Johnson, Stephen Gordon, Jon Touryan, and Kevin King. It is a re-deposit of the OpenNeuro dataset ds004660 and is released under a CC0 license.",
+  "methods_description": "EEG data were collected using standard electrode montages during both resting-state and task-based conditions. Resting-state recordings captured spontaneous neural activity, while task-based recordings were acquired during cognitive task performance. Raw data were preserved in EEGLAB format (.set/.fdt) to maintain signal integrity. All data are organized according to BIDS standards with accompanying metadata files (JSON sidecars, TSV event files) documenting acquisition parameters, electrode locations, and task event timing. Detailed information about specific task protocols, subject demographics, data collection procedures, and any preprocessing steps is provided in the dataset documentation.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,33 +14,15 @@
   },
   "keywords": [
     {
-      "term": "EEG",
-      "subject_scheme": "MeSH"
+      "term": "EEG"
     },
     {
-      "term": "resting-state"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "cognitive tasks",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "neural oscillations",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "neurophysiology",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "task engagement"
-    },
-    {
-      "term": "electroencephalography",
-      "subject_scheme": "MeSH"
-    },
-    {
-      "term": "BIDS"
+      "term": "HED annotations"
     }
   ],
   "related_identifiers": [
@@ -49,14 +32,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004660",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004660.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004660",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -64,7 +47,7 @@
     "eeg"
   ],
   "sizes": [
-    "7.8 GB (85 files)"
+    "7.24 GB (85 files)"
   ],
   "formats": [
     ".fdt",
@@ -74,6 +57,5 @@
     ".tsv",
     ".yml"
   ],
-  "methods_description": "EEG data were collected using standard electrode montages during both resting-state and task-based conditions. Resting-state recordings captured spontaneous neural activity, while task-based recordings were acquired during cognitive task performance. Raw data were preserved in EEGLAB format (.set/.fdt) to maintain signal integrity. All data are organized according to BIDS standards with accompanying metadata files (JSON sidecars, TSV event files) documenting acquisition parameters, electrode locations, and task event timing. Detailed information about specific task protocols, subject demographics, data collection procedures, and any preprocessing steps is provided in the dataset documentation.",
   "source_hash": "8351192f7175915b3f59799e793a44e9706b9602ce3cc19e5d8cd9914d5f270b"
 }
